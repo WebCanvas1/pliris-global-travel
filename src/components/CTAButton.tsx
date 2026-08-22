@@ -10,7 +10,7 @@ import { BOOKING_ENABLED, BOOKING_URL } from '@/site.config';
  */
 export default function CTAButton() {
   const baseClasses =
-    'group inline-flex items-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 font-sans text-[0.8125rem] font-medium tracking-cta text-white backdrop-blur-md transition-all duration-500 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent';
+    'group inline-flex items-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 font-sans text-xs font-medium tracking-cta text-white backdrop-blur-md transition-all duration-500 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent';
 
   if (BOOKING_ENABLED) {
     return (
