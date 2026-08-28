@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    background-color: #0a0a0a;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Respect reduced motion: disable all slideshow and entrance animations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .animate-slide-fade-in,
+  .animate-slide-fade-out,
+  .animate-rise-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
